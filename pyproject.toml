@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "website-projects-1"
+version = "0.1.0"
+description = ""
+authors = ["CodyShitagi <<>>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydub = "^0.25.1"
+pytube = "^11.0.1"
+PyDrive = "^1.3.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
