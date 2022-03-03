@@ -1,6 +1,18 @@
-from pydub import AudioSegment
+from flask import Flask
+app = Flask('a')
 
-wav_audio = AudioSegment.from_file("MountainKing.webm", format="webm")
-raw_audio = AudioSegment.from_file("MountainKing.webm", format="raw", frame_rate=44100, channels=2, sample_width=2)           
+@app.route('/')
+def hello_world():
+  return 'Hello, World!'
 
-file_handle = wav_audio.export("output.mp3", format="mp3")
+app.run(host='0.0.0.0', port=8080)
+
+# import keyboard
+# while True:
+#     try:
+#         if keyboard.is_pressed('s'):
+#             print("stop")
+#         elif keyboard.is_pressed('p'):
+#             print("pause")
+#     except:
+#         pass

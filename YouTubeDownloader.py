@@ -25,12 +25,15 @@ if x == 'p':
   #(output_path=f'{p.title}/')
 
 if x == 'v':
-  yt = YouTube('https://www.youtube.com/watch?v=ZAiEPUu0iO4')
+  w = input('YouTube URL: ')
+  yt = YouTube(w)
   print('The title: ', yt.title, "\n")  
   print('The Url', yt.thumbnail_url, '\n')
-  stream = yt.streams.get_by_itag(int(input('itag:')))
+  stream = yt.streams.get_by_itag(7)
   input('enter to continue')
-  stream.download(output_path='Test musics/')
+  stream.download(output_path='')
 else:
   print('this is wrong')
 
+#https://www.youtube.com/watch?v=b8M6N0FTpNc,
+#girls like girls drake
